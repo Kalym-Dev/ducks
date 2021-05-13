@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/grisha.dir/test.cpp.o CMakeFiles/grisha.dir/Lake.cpp.o CMakeFiles/grisha.dir/Duck.cpp.o CMakeFiles/grisha.dir/Hunter.cpp.o CMakeFiles/grisha.dir/Marble.cpp.o CMakeFiles/grisha.dir/Madagascar.cpp.o CMakeFiles/grisha.dir/Chirki.cpp.o CMakeFiles/grisha.dir/Farm.cpp.o CMakeFiles/grisha.dir/main.cpp.o  -o grisha 
