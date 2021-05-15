@@ -17,7 +17,6 @@ int com_num = 0;
 
 int main() {
 
-
     Madagascar mad("tom", 22, 100, 0);
     Marble mar("jerry", 22,"dnd", 600);
     Chirki chirki("johs", 1231, "red", 54);
@@ -30,19 +29,9 @@ int main() {
     lake1.addElemToEnd(&mar);
     lake1.addElemToEnd(&chirki);
 
-    Madagascar mad1("tom1", 22, 100, 0);
-    Marble mar1("jerry1", 22,"dnd", 600);
+    Farm farm1(1, false);
 
-    Lake lake2;
-    mad.setHomeAddress(&lake2);
-    mar.setHomeAddress(&lake2);
-
-    lake2.addElemToEnd(&mad1);
-    lake2.addElemToEnd(&mar1);
-
-    Farm farm1(1);
-
-    Hunter hun1(2, 1, &farm1);
+    Hunter hun1(20, 1, &farm1);
     Hunter hun2(2, 1, &farm1);
 
     int shoot1 = 0;
@@ -58,6 +47,7 @@ int main() {
 
     bool is_hunting_season = false;
     int is_escape = 0;
+    int temp_shoot_index = 0;
     while(com_num != 6) {
         if(day <= 7)
         {
@@ -79,7 +69,6 @@ int main() {
         switch(com_num){
             case 1:
                 cout << "Lake 1: "  + to_string(lake1.getLength()) << endl;
-                cout << "Lake 2: "  + to_string(lake2.getLength()) << endl;
                 cout << "Farm: "  + to_string(farm1.getLength()) << endl;
                 break;
             case 2:
@@ -93,12 +82,12 @@ int main() {
                         lake1[i]->tellAboutYourself();
                         cout << endl;
                     }
-                }else if(temp_choose == 2){
-                    for(int i = 0; i < lake2.getLength(); i++)
-                    {
-                        lake2[i]->tellAboutYourself();
-                        cout << endl;
-                    }
+//                }else if(temp_choose == 2){
+//                    for(int i = 0; i < lake2.getLength(); i++)
+//                    {
+//                        lake2[i]->tellAboutYourself();
+//                        cout << endl;
+//                    }
                 }else if(temp_choose == 3){
                     for(int i = 0; i < farm1.getLength(); i++)
                     {
@@ -133,23 +122,23 @@ int main() {
                         }
                     }
                 }else if(temp_choose == 2){
-                    for(int i = 0; i < lake2.getLength(); i++)
-                    {
-                        temp_what_can = lake2[i]->getWhatcan(); // 1 - летать, 2 - плавать, 3 - мигрировать, 4 - безьдельничать
-                        if(temp_what_can == 1)
-                        {
-                            t_fly++;
-                        }else if(temp_what_can == 2)
-                        {
-                            t_swi++;
-                        }else if(temp_what_can == 3)
-                        {
-                            t_mig++;
-                        }else if(temp_what_can == 4)
-                        {
-                            t_not++;
-                        }
-                    }
+//                    for(int i = 0; i < lake2.getLength(); i++)
+//                    {
+//                        temp_what_can = lake2[i]->getWhatcan(); // 1 - летать, 2 - плавать, 3 - мигрировать, 4 - безьдельничать
+//                        if(temp_what_can == 1)
+//                        {
+//                            t_fly++;
+//                        }else if(temp_what_can == 2)
+//                        {
+//                            t_swi++;
+//                        }else if(temp_what_can == 3)
+//                        {
+//                            t_mig++;
+//                        }else if(temp_what_can == 4)
+//                        {
+//                            t_not++;
+//                        }
+//                    }
                 }
                 cout << "Fly: " + to_string(t_fly) << endl;
                 cout << "Swi: " + to_string(t_swi) << endl;
@@ -166,51 +155,20 @@ int main() {
                 }else if(temp_choose == 1){
                     shoot1 = hun1.getHuntingquantity();
                     for(int i = 0; i < shoot1; i++) {
-                        if (lake1.getLength() > 0) {
-                            if (farm1.getLength() > 0) {
-                                lake1[rand() % lake1.getLength()]->setCurAddress(hun1.getHunterFarm());
-                                hun1.getHunterFarm()->addElemToEnd(lake1[rand() % lake1.getLength()]);
-                                lake1.remove(rand() % lake1.getLength());
-                            } else {
-                                shoot1 = i;
-                            }
+                        if(lake1.getLength() > 0){
+                            temp_shoot_index = rand() % lake1.getLength();
+                            lake1[temp_shoot_index]->setCurAddress(hun1.getHunterFarm());
+                            hun1.getHunterFarm()->addElemToEnd(lake1[temp_shoot_index]);
+                            lake1.remove(temp_shoot_index);
+                        }else{
+                            cout << "Nothing to catch!" << endl;
+                            shoot1 = 0;
+                            break;
                         }
                     }
 
-                    shoot2 = hun2.getHuntingquantity();
-                    for(int i = 0; i < shoot2; i++)
-                    {
-                        if(lake1.getLength() > 0){
-                            lake1[rand() % lake1.getLength()]->setCurAddress(hun2.getHunterFarm());
-                            hun2.getHunterFarm()->addElemToEnd(lake1[rand() % lake1.getLength()]);
-                            lake1.remove(rand() % lake1.getLength());
-                        }else{
-                            shoot2 = i;
-                        }
-                    }
                 }else if(temp_choose == 2){
-                    shoot1 = hun1.getHuntingquantity();
-                    for(int i = 0; i < shoot1; i++)
-                    {
-                        if(lake2.getLength() > 0){
-                            lake2[rand() % lake2.getLength()]->setCurAddress(hun1.getHunterFarm());
-                            hun1.getHunterFarm()->addElemToEnd(lake2[rand() % lake2.getLength()]);
-                            lake2.remove(rand() % lake2.getLength());
-                        }else{
-                            shoot1 = i;
-                        }
-                    }
-                    shoot2 = hun2.getHuntingquantity();
-                    for(int i = 0; i < shoot2; i++)
-                    {
-                        if(lake2.getLength() > 0){
-                            lake2[rand() % lake2.getLength()]->setCurAddress(hun2.getHunterFarm());
-                            hun2.getHunterFarm()->addElemToEnd(lake1[rand() % lake2.getLength()]);
-                            lake2.remove(rand() % lake2.getLength());
-                        }else{
-                            shoot2 = i;
-                        }
-                    }
+
                 }
 
                 cout << "Hunter 1: " + to_string(shoot1) + " nice shoots" << endl;
@@ -236,12 +194,27 @@ int main() {
                     is_escape = rand() % 2;
                     if(is_escape == 1)
                     {
-                        if(farm1[i]->getHomeAddress() != nullptr)
+                        if(!farm1[i]->getIsescapee())
                         {
-                            farm1[i]->setCurAddress(farm1[i]->getHomeAddress());
-                        }else{
-                            if((rand() % 2) == 1 ) farm1[i]->setCurAddress(&lake1);
-                            if((rand() % 2) == 0 ) farm1[i]->setCurAddress(&lake2);
+                            if(farm1[i]->getHomeAddress() != nullptr)
+                            {
+                                farm1[i]->setCurAddress(farm1[i]->getHomeAddress());
+                                farm1[i]->setIsescapee(true);
+                                (farm1[i]->getHomeAddress())->addElemToEnd(farm1[i]);
+                            }else{
+//                                if((rand() % 2) == 1 ) {
+//                                    farm1[i]->setCurAddress(&lake1);
+//                                    farm1[i]->setIsescapee(true);
+//                                    lake1.addElemToEnd(farm1[i]);
+//                                }
+//                                if((rand() % 2) == 0 ) {
+//                                    farm1[i]->setCurAddress(&lake2);
+//                                    farm1[i]->setIsescapee(true);
+//                                    lake2.addElemToEnd(farm1[i]);
+//                                }
+                            }
+                            cout << "Duck " << farm1[i]->getName() << " Escape!" << endl;
+                            farm1.remove(i);
                         }
                     }
                 }

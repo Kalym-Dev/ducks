@@ -7,6 +7,7 @@ Duck::Duck(string name, int weight, int what_can)
     m_what_can = what_can;
     m_home_address = nullptr;
     m_cur_address = nullptr;
+    m_is_escapee = false;
 }
 
 string Duck::getName()
@@ -55,6 +56,13 @@ void Duck::setCurAddress(Lake *cur_address)
 
 void Duck::setWhatcan(int what_can) {
     m_what_can = what_can;
+}
+
+bool Duck::getIsescapee(){
+    return m_is_escapee;
+}
+void Duck::setIsescapee(bool is_escapee){
+    m_is_escapee = is_escapee;
 }
 
 void Duck::tellAboutYourself() {

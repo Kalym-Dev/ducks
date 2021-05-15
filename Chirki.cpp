@@ -18,7 +18,7 @@ void Chirki::setBeakcolor(string beak_color) {
 
 void Chirki::tellAboutYourself() {
     string temp_str = "Name: " + getName() + " Weight: " + to_string(getWeight()) + " What can? ";
-    if(getWhatcan() == 2)
+    if(getWhatcan() == 4)
     {
         temp_str += "Nothing";
     }
