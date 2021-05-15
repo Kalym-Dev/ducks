@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/kamil/Desktop/grisha/Cherrety.cpp
-Cherrety.h
-/home/kamil/Desktop/grisha/Cherrety.h
-
 /home/kamil/Desktop/grisha/Cherrety.h
 Duck.h
 /home/kamil/Desktop/grisha/Duck.h
@@ -24,17 +20,9 @@ string
 iostream
 -
 
-/home/kamil/Desktop/grisha/Farm.cpp
-Farm.h
-/home/kamil/Desktop/grisha/Farm.h
-
 /home/kamil/Desktop/grisha/Farm.h
 Lake.h
 /home/kamil/Desktop/grisha/Lake.h
-
-/home/kamil/Desktop/grisha/Hunter.cpp
-Hunter.h
-/home/kamil/Desktop/grisha/Hunter.h
 
 /home/kamil/Desktop/grisha/Hunter.h
 iostream
@@ -44,13 +32,13 @@ random
 Farm.h
 /home/kamil/Desktop/grisha/Farm.h
 
-/home/kamil/Desktop/grisha/Lake.cpp
-Lake.h
-/home/kamil/Desktop/grisha/Lake.h
-
 /home/kamil/Desktop/grisha/Lake.h
 iostream
 -
+Duck.h
+/home/kamil/Desktop/grisha/Duck.h
+
+/home/kamil/Desktop/grisha/Layaing.h
 Duck.h
 /home/kamil/Desktop/grisha/Duck.h
 
@@ -62,8 +50,14 @@ Duck.h
 Duck.h
 /home/kamil/Desktop/grisha/Duck.h
 
+/home/kamil/Desktop/grisha/Peganky.h
+Duck.h
+/home/kamil/Desktop/grisha/Duck.h
+
 /home/kamil/Desktop/grisha/main.cpp
 iostream
+-
+vector
 -
 Lake.h
 /home/kamil/Desktop/grisha/Lake.h
@@ -71,12 +65,16 @@ Farm.h
 /home/kamil/Desktop/grisha/Farm.h
 Hunter.h
 /home/kamil/Desktop/grisha/Hunter.h
-Duck.h
-/home/kamil/Desktop/grisha/Duck.h
 Marble.h
 /home/kamil/Desktop/grisha/Marble.h
 Madagascar.h
 /home/kamil/Desktop/grisha/Madagascar.h
 Chirki.h
 /home/kamil/Desktop/grisha/Chirki.h
+Cherrety.h
+/home/kamil/Desktop/grisha/Cherrety.h
+Layaing.h
+/home/kamil/Desktop/grisha/Layaing.h
+Peganky.h
+/home/kamil/Desktop/grisha/Peganky.h
 

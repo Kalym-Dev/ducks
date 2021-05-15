@@ -27,6 +27,10 @@ CMakeFiles/grisha.dir/Lake.cpp.o
  /home/kamil/Desktop/grisha/Duck.h
  /home/kamil/Desktop/grisha/Lake.cpp
  /home/kamil/Desktop/grisha/Lake.h
+CMakeFiles/grisha.dir/Layaing.cpp.o
+ /home/kamil/Desktop/grisha/Duck.h
+ /home/kamil/Desktop/grisha/Layaing.cpp
+ /home/kamil/Desktop/grisha/Layaing.h
 CMakeFiles/grisha.dir/Madagascar.cpp.o
  /home/kamil/Desktop/grisha/Duck.h
  /home/kamil/Desktop/grisha/Madagascar.cpp
@@ -35,14 +39,21 @@ CMakeFiles/grisha.dir/Marble.cpp.o
  /home/kamil/Desktop/grisha/Duck.h
  /home/kamil/Desktop/grisha/Marble.cpp
  /home/kamil/Desktop/grisha/Marble.h
+CMakeFiles/grisha.dir/Peganky.cpp.o
+ /home/kamil/Desktop/grisha/Duck.h
+ /home/kamil/Desktop/grisha/Peganky.cpp
+ /home/kamil/Desktop/grisha/Peganky.h
 CMakeFiles/grisha.dir/main.cpp.o
+ /home/kamil/Desktop/grisha/Cherrety.h
  /home/kamil/Desktop/grisha/Chirki.h
  /home/kamil/Desktop/grisha/Duck.h
  /home/kamil/Desktop/grisha/Farm.h
  /home/kamil/Desktop/grisha/Hunter.h
  /home/kamil/Desktop/grisha/Lake.h
+ /home/kamil/Desktop/grisha/Layaing.h
  /home/kamil/Desktop/grisha/Madagascar.h
  /home/kamil/Desktop/grisha/Marble.h
+ /home/kamil/Desktop/grisha/Peganky.h
  /home/kamil/Desktop/grisha/main.cpp
 CMakeFiles/grisha.dir/test.cpp.o
  /home/kamil/Desktop/grisha/test.cpp

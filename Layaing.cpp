@@ -18,9 +18,9 @@ void Layaing::setAge(int age) {
 
 void Layaing::tellAboutYourself() {
     string temp_str = "Name: " + getName() + " Weight: " + to_string(getWeight()) + " What can? ";
-    if(getWhatcan() == 4)
+    if(getWhatcan() == 2)
     {
-        temp_str += "Nothing";
+        temp_str += "Swim";
     }
 
     temp_str += " Age: " + to_string(m_age) + " Hobby: " + m_hobby;

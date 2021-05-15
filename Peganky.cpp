@@ -18,9 +18,9 @@ void Peganky::setStamina(int stamina) {
 
 void Peganky::tellAboutYourself() {
     string temp_str = "Name: " + getName() + " Weight: " + to_string(getWeight()) + " What can? ";
-    if(getWhatcan() == 4)
+    if(getWhatcan() == 3)
     {
-        temp_str += "Nothing";
+        temp_str += "Migratinon";
     }
 
     temp_str += " Stamina: " + to_string(m_stamina) + " Form: " + m_form;

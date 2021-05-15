@@ -27,6 +27,10 @@ CMakeFiles/grisha.dir/Lake.cpp.o: ../Duck.h
 CMakeFiles/grisha.dir/Lake.cpp.o: ../Lake.cpp
 CMakeFiles/grisha.dir/Lake.cpp.o: ../Lake.h
 
+CMakeFiles/grisha.dir/Layaing.cpp.o: ../Duck.h
+CMakeFiles/grisha.dir/Layaing.cpp.o: ../Layaing.cpp
+CMakeFiles/grisha.dir/Layaing.cpp.o: ../Layaing.h
+
 CMakeFiles/grisha.dir/Madagascar.cpp.o: ../Duck.h
 CMakeFiles/grisha.dir/Madagascar.cpp.o: ../Madagascar.cpp
 CMakeFiles/grisha.dir/Madagascar.cpp.o: ../Madagascar.h
@@ -35,13 +39,20 @@ CMakeFiles/grisha.dir/Marble.cpp.o: ../Duck.h
 CMakeFiles/grisha.dir/Marble.cpp.o: ../Marble.cpp
 CMakeFiles/grisha.dir/Marble.cpp.o: ../Marble.h
 
+CMakeFiles/grisha.dir/Peganky.cpp.o: ../Duck.h
+CMakeFiles/grisha.dir/Peganky.cpp.o: ../Peganky.cpp
+CMakeFiles/grisha.dir/Peganky.cpp.o: ../Peganky.h
+
+CMakeFiles/grisha.dir/main.cpp.o: ../Cherrety.h
 CMakeFiles/grisha.dir/main.cpp.o: ../Chirki.h
 CMakeFiles/grisha.dir/main.cpp.o: ../Duck.h
 CMakeFiles/grisha.dir/main.cpp.o: ../Farm.h
 CMakeFiles/grisha.dir/main.cpp.o: ../Hunter.h
 CMakeFiles/grisha.dir/main.cpp.o: ../Lake.h
+CMakeFiles/grisha.dir/main.cpp.o: ../Layaing.h
 CMakeFiles/grisha.dir/main.cpp.o: ../Madagascar.h
 CMakeFiles/grisha.dir/main.cpp.o: ../Marble.h
+CMakeFiles/grisha.dir/main.cpp.o: ../Peganky.h
 CMakeFiles/grisha.dir/main.cpp.o: ../main.cpp
 
 CMakeFiles/grisha.dir/test.cpp.o: ../test.cpp

@@ -18,9 +18,9 @@ void Cherrety::setPawsize(int paw_size) {
 
 void Cherrety::tellAboutYourself() {
     string temp_str = "Name: " + getName() + " Weight: " + to_string(getWeight()) + " What can? ";
-    if(getWhatcan() == 4)
+    if(getWhatcan() == 2)
     {
-        temp_str += "Nothing";
+        temp_str += "Swim";
     }
 
     temp_str += " Paw size: " + to_string(m_paw_size) + " Beak color: " + m_beak_color;
