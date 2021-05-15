@@ -144,19 +144,19 @@ public:
         return m_length;
     }
 
-    Duck* getArray()
-    {
-        return *m_data;
-    }
-
-    void setArray(Duck* data){
-        m_data = &data;
-    }
-
-    void setLen(int len)
-    {
-        m_length = len;
-    }
+//    Duck* getArray()
+//    {
+//        return *m_data;
+//    }
+//
+//    void setArray(Duck* data){
+//        m_data = &data;
+//    }
+//
+//    void setLen(int len)
+//    {
+//        m_length = len;
+//    }
 
 
 };

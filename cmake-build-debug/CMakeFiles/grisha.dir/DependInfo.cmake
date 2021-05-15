@@ -4,13 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/kamil/Desktop/grisha/Cherrety.cpp" "/home/kamil/Desktop/grisha/cmake-build-debug/CMakeFiles/grisha.dir/Cherrety.cpp.o"
   "/home/kamil/Desktop/grisha/Chirki.cpp" "/home/kamil/Desktop/grisha/cmake-build-debug/CMakeFiles/grisha.dir/Chirki.cpp.o"
   "/home/kamil/Desktop/grisha/Duck.cpp" "/home/kamil/Desktop/grisha/cmake-build-debug/CMakeFiles/grisha.dir/Duck.cpp.o"
   "/home/kamil/Desktop/grisha/Farm.cpp" "/home/kamil/Desktop/grisha/cmake-build-debug/CMakeFiles/grisha.dir/Farm.cpp.o"
   "/home/kamil/Desktop/grisha/Hunter.cpp" "/home/kamil/Desktop/grisha/cmake-build-debug/CMakeFiles/grisha.dir/Hunter.cpp.o"
   "/home/kamil/Desktop/grisha/Lake.cpp" "/home/kamil/Desktop/grisha/cmake-build-debug/CMakeFiles/grisha.dir/Lake.cpp.o"
+  "/home/kamil/Desktop/grisha/Layaing.cpp" "/home/kamil/Desktop/grisha/cmake-build-debug/CMakeFiles/grisha.dir/Layaing.cpp.o"
   "/home/kamil/Desktop/grisha/Madagascar.cpp" "/home/kamil/Desktop/grisha/cmake-build-debug/CMakeFiles/grisha.dir/Madagascar.cpp.o"
   "/home/kamil/Desktop/grisha/Marble.cpp" "/home/kamil/Desktop/grisha/cmake-build-debug/CMakeFiles/grisha.dir/Marble.cpp.o"
+  "/home/kamil/Desktop/grisha/Peganky.cpp" "/home/kamil/Desktop/grisha/cmake-build-debug/CMakeFiles/grisha.dir/Peganky.cpp.o"
   "/home/kamil/Desktop/grisha/main.cpp" "/home/kamil/Desktop/grisha/cmake-build-debug/CMakeFiles/grisha.dir/main.cpp.o"
   "/home/kamil/Desktop/grisha/test.cpp" "/home/kamil/Desktop/grisha/cmake-build-debug/CMakeFiles/grisha.dir/test.cpp.o"
   )

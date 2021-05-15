@@ -174,6 +174,45 @@ CMakeFiles/grisha.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/grisha.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Desktop/grisha/main.cpp -o CMakeFiles/grisha.dir/main.cpp.s
 
+CMakeFiles/grisha.dir/Cherrety.cpp.o: CMakeFiles/grisha.dir/flags.make
+CMakeFiles/grisha.dir/Cherrety.cpp.o: ../Cherrety.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Desktop/grisha/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/grisha.dir/Cherrety.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/grisha.dir/Cherrety.cpp.o -c /home/kamil/Desktop/grisha/Cherrety.cpp
+
+CMakeFiles/grisha.dir/Cherrety.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/grisha.dir/Cherrety.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Desktop/grisha/Cherrety.cpp > CMakeFiles/grisha.dir/Cherrety.cpp.i
+
+CMakeFiles/grisha.dir/Cherrety.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/grisha.dir/Cherrety.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Desktop/grisha/Cherrety.cpp -o CMakeFiles/grisha.dir/Cherrety.cpp.s
+
+CMakeFiles/grisha.dir/Layaing.cpp.o: CMakeFiles/grisha.dir/flags.make
+CMakeFiles/grisha.dir/Layaing.cpp.o: ../Layaing.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Desktop/grisha/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/grisha.dir/Layaing.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/grisha.dir/Layaing.cpp.o -c /home/kamil/Desktop/grisha/Layaing.cpp
+
+CMakeFiles/grisha.dir/Layaing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/grisha.dir/Layaing.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Desktop/grisha/Layaing.cpp > CMakeFiles/grisha.dir/Layaing.cpp.i
+
+CMakeFiles/grisha.dir/Layaing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/grisha.dir/Layaing.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Desktop/grisha/Layaing.cpp -o CMakeFiles/grisha.dir/Layaing.cpp.s
+
+CMakeFiles/grisha.dir/Peganky.cpp.o: CMakeFiles/grisha.dir/flags.make
+CMakeFiles/grisha.dir/Peganky.cpp.o: ../Peganky.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kamil/Desktop/grisha/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/grisha.dir/Peganky.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/grisha.dir/Peganky.cpp.o -c /home/kamil/Desktop/grisha/Peganky.cpp
+
+CMakeFiles/grisha.dir/Peganky.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/grisha.dir/Peganky.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kamil/Desktop/grisha/Peganky.cpp > CMakeFiles/grisha.dir/Peganky.cpp.i
+
+CMakeFiles/grisha.dir/Peganky.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/grisha.dir/Peganky.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kamil/Desktop/grisha/Peganky.cpp -o CMakeFiles/grisha.dir/Peganky.cpp.s
+
 # Object files for target grisha
 grisha_OBJECTS = \
 "CMakeFiles/grisha.dir/test.cpp.o" \
@@ -184,7 +223,10 @@ grisha_OBJECTS = \
 "CMakeFiles/grisha.dir/Madagascar.cpp.o" \
 "CMakeFiles/grisha.dir/Chirki.cpp.o" \
 "CMakeFiles/grisha.dir/Farm.cpp.o" \
-"CMakeFiles/grisha.dir/main.cpp.o"
+"CMakeFiles/grisha.dir/main.cpp.o" \
+"CMakeFiles/grisha.dir/Cherrety.cpp.o" \
+"CMakeFiles/grisha.dir/Layaing.cpp.o" \
+"CMakeFiles/grisha.dir/Peganky.cpp.o"
 
 # External object files for target grisha
 grisha_EXTERNAL_OBJECTS =
@@ -198,9 +240,12 @@ grisha: CMakeFiles/grisha.dir/Madagascar.cpp.o
 grisha: CMakeFiles/grisha.dir/Chirki.cpp.o
 grisha: CMakeFiles/grisha.dir/Farm.cpp.o
 grisha: CMakeFiles/grisha.dir/main.cpp.o
+grisha: CMakeFiles/grisha.dir/Cherrety.cpp.o
+grisha: CMakeFiles/grisha.dir/Layaing.cpp.o
+grisha: CMakeFiles/grisha.dir/Peganky.cpp.o
 grisha: CMakeFiles/grisha.dir/build.make
 grisha: CMakeFiles/grisha.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kamil/Desktop/grisha/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable grisha"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kamil/Desktop/grisha/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable grisha"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/grisha.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

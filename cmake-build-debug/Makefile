@@ -123,6 +123,33 @@ grisha/fast:
 	$(MAKE) -f CMakeFiles/grisha.dir/build.make CMakeFiles/grisha.dir/build
 .PHONY : grisha/fast
 
+Cherrety.o: Cherrety.cpp.o
+
+.PHONY : Cherrety.o
+
+# target to build an object file
+Cherrety.cpp.o:
+	$(MAKE) -f CMakeFiles/grisha.dir/build.make CMakeFiles/grisha.dir/Cherrety.cpp.o
+.PHONY : Cherrety.cpp.o
+
+Cherrety.i: Cherrety.cpp.i
+
+.PHONY : Cherrety.i
+
+# target to preprocess a source file
+Cherrety.cpp.i:
+	$(MAKE) -f CMakeFiles/grisha.dir/build.make CMakeFiles/grisha.dir/Cherrety.cpp.i
+.PHONY : Cherrety.cpp.i
+
+Cherrety.s: Cherrety.cpp.s
+
+.PHONY : Cherrety.s
+
+# target to generate assembly for a file
+Cherrety.cpp.s:
+	$(MAKE) -f CMakeFiles/grisha.dir/build.make CMakeFiles/grisha.dir/Cherrety.cpp.s
+.PHONY : Cherrety.cpp.s
+
 Chirki.o: Chirki.cpp.o
 
 .PHONY : Chirki.o
@@ -258,6 +285,33 @@ Lake.cpp.s:
 	$(MAKE) -f CMakeFiles/grisha.dir/build.make CMakeFiles/grisha.dir/Lake.cpp.s
 .PHONY : Lake.cpp.s
 
+Layaing.o: Layaing.cpp.o
+
+.PHONY : Layaing.o
+
+# target to build an object file
+Layaing.cpp.o:
+	$(MAKE) -f CMakeFiles/grisha.dir/build.make CMakeFiles/grisha.dir/Layaing.cpp.o
+.PHONY : Layaing.cpp.o
+
+Layaing.i: Layaing.cpp.i
+
+.PHONY : Layaing.i
+
+# target to preprocess a source file
+Layaing.cpp.i:
+	$(MAKE) -f CMakeFiles/grisha.dir/build.make CMakeFiles/grisha.dir/Layaing.cpp.i
+.PHONY : Layaing.cpp.i
+
+Layaing.s: Layaing.cpp.s
+
+.PHONY : Layaing.s
+
+# target to generate assembly for a file
+Layaing.cpp.s:
+	$(MAKE) -f CMakeFiles/grisha.dir/build.make CMakeFiles/grisha.dir/Layaing.cpp.s
+.PHONY : Layaing.cpp.s
+
 Madagascar.o: Madagascar.cpp.o
 
 .PHONY : Madagascar.o
@@ -311,6 +365,33 @@ Marble.s: Marble.cpp.s
 Marble.cpp.s:
 	$(MAKE) -f CMakeFiles/grisha.dir/build.make CMakeFiles/grisha.dir/Marble.cpp.s
 .PHONY : Marble.cpp.s
+
+Peganky.o: Peganky.cpp.o
+
+.PHONY : Peganky.o
+
+# target to build an object file
+Peganky.cpp.o:
+	$(MAKE) -f CMakeFiles/grisha.dir/build.make CMakeFiles/grisha.dir/Peganky.cpp.o
+.PHONY : Peganky.cpp.o
+
+Peganky.i: Peganky.cpp.i
+
+.PHONY : Peganky.i
+
+# target to preprocess a source file
+Peganky.cpp.i:
+	$(MAKE) -f CMakeFiles/grisha.dir/build.make CMakeFiles/grisha.dir/Peganky.cpp.i
+.PHONY : Peganky.cpp.i
+
+Peganky.s: Peganky.cpp.s
+
+.PHONY : Peganky.s
+
+# target to generate assembly for a file
+Peganky.cpp.s:
+	$(MAKE) -f CMakeFiles/grisha.dir/build.make CMakeFiles/grisha.dir/Peganky.cpp.s
+.PHONY : Peganky.cpp.s
 
 main.o: main.cpp.o
 
@@ -375,6 +456,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... grisha"
+	@echo "... Cherrety.o"
+	@echo "... Cherrety.i"
+	@echo "... Cherrety.s"
 	@echo "... Chirki.o"
 	@echo "... Chirki.i"
 	@echo "... Chirki.s"
@@ -390,12 +474,18 @@ help:
 	@echo "... Lake.o"
 	@echo "... Lake.i"
 	@echo "... Lake.s"
+	@echo "... Layaing.o"
+	@echo "... Layaing.i"
+	@echo "... Layaing.s"
 	@echo "... Madagascar.o"
 	@echo "... Madagascar.i"
 	@echo "... Madagascar.s"
 	@echo "... Marble.o"
 	@echo "... Marble.i"
 	@echo "... Marble.s"
+	@echo "... Peganky.o"
+	@echo "... Peganky.i"
+	@echo "... Peganky.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

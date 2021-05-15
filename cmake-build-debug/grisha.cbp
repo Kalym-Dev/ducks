@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/kamil/Desktop/grisha/Cherrety.cpp">
+			<Option target="grisha"/>
+		</Unit>
+		<Unit filename="/home/kamil/Desktop/grisha/Cherrety.h">
+			<Option target="grisha"/>
+		</Unit>
 		<Unit filename="/home/kamil/Desktop/grisha/Chirki.cpp">
 			<Option target="grisha"/>
 		</Unit>
@@ -114,6 +120,12 @@
 		<Unit filename="/home/kamil/Desktop/grisha/Lake.h">
 			<Option target="grisha"/>
 		</Unit>
+		<Unit filename="/home/kamil/Desktop/grisha/Layaing.cpp">
+			<Option target="grisha"/>
+		</Unit>
+		<Unit filename="/home/kamil/Desktop/grisha/Layaing.h">
+			<Option target="grisha"/>
+		</Unit>
 		<Unit filename="/home/kamil/Desktop/grisha/Madagascar.cpp">
 			<Option target="grisha"/>
 		</Unit>
@@ -124,6 +136,12 @@
 			<Option target="grisha"/>
 		</Unit>
 		<Unit filename="/home/kamil/Desktop/grisha/Marble.h">
+			<Option target="grisha"/>
+		</Unit>
+		<Unit filename="/home/kamil/Desktop/grisha/Peganky.cpp">
+			<Option target="grisha"/>
+		</Unit>
+		<Unit filename="/home/kamil/Desktop/grisha/Peganky.h">
 			<Option target="grisha"/>
 		</Unit>
 		<Unit filename="/home/kamil/Desktop/grisha/main.cpp">
