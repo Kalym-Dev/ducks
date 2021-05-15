@@ -76,6 +76,8 @@ void Duck::tellAboutYourself() {
         temp_str += "Migrate";
     }else if(m_what_can == 4){
         temp_str += "Nothing";
+    }else if(m_what_can == 5){
+        temp_str += "Elusive";
     }
 
     std::cout << temp_str;

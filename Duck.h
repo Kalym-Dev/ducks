@@ -16,7 +16,7 @@ private:
     int m_weight;
     Lake* m_home_address;
     Lake* m_cur_address;
-    int m_what_can; // 1 - летать, 2 - плавать, 3 - мигрировать, 4 - безьдельничать
+    int m_what_can; // 1 - летать, 2 - плавать, 3 - мигрировать, 4 - безьдельничать // 5 - неуловимый
     bool m_is_escapee;
 
 public:

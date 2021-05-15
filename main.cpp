@@ -314,6 +314,12 @@ int main() {
     Layaing* t_rand_layaing;
     Peganky* t_rand_peganky;
 
+    Duck t_elu_duck("Elusive", 1000, 5);
+    int elu_duck_knows = 0;
+    int t_duck_chance = 0;
+    bool t_elu_flag = false;
+    int t_days_for_debuf = 0;
+    int rand_farm_index = 0;
 
     while(duck_com_num != 3) {
         cout << "1. Manual adding ducks!" << endl;
@@ -692,7 +698,6 @@ int main() {
             default:
                 break;
         }
-
         if(day != 1 && day != 0) //в первый день и в нулевой охоты нету
         {
             for(int i = 0; i < farms.size(); i++)
@@ -725,6 +730,16 @@ int main() {
                                 (*farms[i]).remove(j);
                             }
                         }
+                    }else if((*farms[i])[j]->getWhatcan() == 5){
+                        if(farms.size() > 1){
+                            rand_lake_index = rand() % (lakes.size() - 1);
+                        }else{
+                            rand_lake_index = rand() % (lakes.size());
+                        }
+                        (*farms[i])[j]->setCurAddress(lakes[rand_lake_index]);
+                        lakes[rand_lake_index]->addElemToEnd((*farms[i])[j]);
+                        cout << "Duck " << (*farms[i])[j]->getName() << " Escape!" << endl;
+                        (*farms[i]).remove(j);
                     }
                 }
             }
@@ -733,47 +748,93 @@ int main() {
             {
                 for(int j = 0; j < lakes[i]->getLength(); j++)
                 {
-                    if((*farms[i])[j]->getWhatcan() == 3)
+                    if((*lakes[i])[j]->getWhatcan() == 3)
                     {
                         if(lakes.size() > 1){
                             rand_lake_index = rand() % (lakes.size() - 1);
                         }else{
                             rand_lake_index = rand() % (lakes.size());
                         }
-                        (*farms[i])[j]->setCurAddress(lakes[rand_lake_index]);
-                        lakes[rand_lake_index]->addElemToEnd((*farms[i])[j]);
-                        (*farms[i]).remove(j);
+                        (*lakes[i])[j]->setCurAddress(lakes[rand_lake_index]);
+                        lakes[rand_lake_index]->addElemToEnd((*lakes[i])[j]);
+                        (*lakes[i]).remove(j);
                     }
                 }
             }
+
+            if(t_elu_flag)
+            {
+                if(t_days_for_debuf == 0)
+                {
+                    t_elu_flag = false;
+                    for(int i = 0; i < farms.size(); i++)
+                    {
+                        for(int j = 0; j < farms[i]->getLength(); j++)
+                        {
+                            if((*farms[i])[j]->getWhatcan() == 5)
+                            {
+                                (*farms[i]).remove(j);
+                                goto out_farm;
+                            }
+                            if(false) out_farm:break;
+                        }
+                    }
+                    for(int i = 0; i < lakes.size(); i++)
+                    {
+                        for(int j = 0; j < lakes[i]->getLength(); j++)
+                        {
+                            if((*lakes[i])[j]->getWhatcan() == 5)
+                            {
+                                (*lakes[i]).remove(j);
+                                goto out_lake;
+                            }
+                        }
+                        if(false) out_lake:break;
+                    }
+                }else{
+                    t_days_for_debuf--;
+                }
+            }
+
+            //Elusive duck
+            t_duck_chance = rand() % 2;
+            if(t_duck_chance == 1 && !t_elu_flag){
+                t_duck_home = rand() % 2 + 1;
+                if(t_duck_home == 1){
+                    t_lake_num = rand() % lakes.size() + 1;
+                    if(t_lake_num > 0 && t_lake_num <= lakes.size()){
+                        lakes[t_lake_num - 1]->addElemToEnd(&t_elu_duck);
+                        t_elu_duck.setCurAddress(lakes[t_farm_num - 1]);
+                        elu_duck_knows = rand() % 2;
+                        if(elu_duck_knows == 1)
+                        {
+                            t_elu_duck.setHomeAddress(lakes[t_farm_num - 1]);
+                        }else{
+                            t_elu_duck.setHomeAddress(nullptr);
+                        }
+                        t_days_for_debuf = 2;
+                        t_elu_flag = true;
+                    }
+                }else if(t_duck_home == 2){
+                    t_farm_num = rand() % farms.size() + 1;
+                    if(t_farm_num > 0 && t_farm_num <= farms.size()){
+                        farms[t_farm_num - 1]->addElemToEnd(&t_elu_duck);
+                        t_elu_duck.setCurAddress(farms[t_farm_num - 1]);
+                        elu_duck_knows = rand() % 2;
+                        if(elu_duck_knows == 1)
+                        {
+                            t_elu_duck.setHomeAddress(farms[t_farm_num - 1]);;
+                        }else{
+                            t_elu_duck.setHomeAddress(nullptr);
+                        }
+                    }
+                    t_days_for_debuf = 2;
+                    t_elu_flag = true;
+                }
+            }
+
         }
     }
-
-    for(int i = 0; i < lakes.size(); i++)
-    {
-        delete lakes[i];
-    }
-
-    for(int i = 0; i < farms.size(); i++)
-    {
-        delete farms[i];
-    }
-
-    delete t_marble;
-    delete t_magascar;
-    delete t_chirki;
-    delete t_cherrety;
-    delete t_layaing;
-    delete t_peganky;
-
-    delete t_rand_marble;
-    delete t_rand_magascar;
-    delete t_rand_chirki;
-    delete t_rand_cherrety;
-    delete t_rand_layaing;
-    delete t_rand_peganky;
-
-
 
     return 0;
 }
