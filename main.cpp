@@ -492,11 +492,6 @@ int main() {
 
     }
 
-
-    Madagascar mad("tom", 22, 100, 0);
-    Marble mar("jerry", 22,"dnd", 600);
-    Chirki chirki("johs", 1231, "red", 54);
-
     int shoot1 = 0;
     int shoot2 = 0;
 
@@ -688,7 +683,7 @@ int main() {
                 day++;
                 break;
             case 6:
-                return 0;
+                //return 0;
                 break;
             default:
                 break;
@@ -750,6 +745,29 @@ int main() {
         }
     }
 
+    for(int i = 0; i < lakes.size(); i++)
+    {
+        delete lakes[i];
+    }
+
+    for(int i = 0; i < farms.size(); i++)
+    {
+        delete farms[i];
+    }
+
+    delete t_marble;
+    delete t_magascar;
+    delete t_chirki;
+    delete t_cherrety;
+    delete t_layaing;
+    delete t_peganky;
+
+    delete t_rand_marble;
+    delete t_rand_magascar;
+    delete t_rand_chirki;
+    delete t_rand_cherrety;
+    delete t_rand_layaing;
+    delete t_rand_peganky;
 
 
 
