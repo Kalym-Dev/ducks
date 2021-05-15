@@ -729,6 +729,24 @@ int main() {
                     }
                 }
             }
+
+            for(int i = 0; i < lakes.size(); i++)
+            {
+                for(int j = 0; j < lakes[i]->getLength(); j++)
+                {
+                    if((*farms[i])[j]->getWhatcan() == 3)
+                    {
+                        if(lakes.size() > 1){
+                            rand_lake_index = rand() % (lakes.size() - 1);
+                        }else{
+                            rand_lake_index = rand() % (lakes.size());
+                        }
+                        (*farms[i])[j]->setCurAddress(lakes[rand_lake_index]);
+                        lakes[rand_lake_index]->addElemToEnd((*farms[i])[j]);
+                        (*farms[i]).remove(j);
+                    }
+                }
+            }
         }
     }
 
