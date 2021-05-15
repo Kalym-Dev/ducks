@@ -660,12 +660,16 @@ int main() {
                         cout << "Hunter " + to_string(i + 1) + ": " + to_string(shoot1) << endl;
                         for (int j = 0; j < shoot1; j++) {
                             if (lakes[t_lake_num - 1]->getLength() > 0) {
-                                temp_shoot_index = rand() % (lakes[t_lake_num - 1]->getLength() - 1);
+                                if(lakes[t_lake_num - 1]->getLength() > 1){
+                                    temp_shoot_index = rand() % (lakes[t_lake_num - 1]->getLength() - 1);
+                                }else{
+                                    temp_shoot_index = 0;
+                                }
                                 (*lakes[t_lake_num - 1])[temp_shoot_index]->setCurAddress(hunters[i]->getHunterFarm());
                                 hunters[i]->getHunterFarm()->addElemToEnd((*lakes[t_lake_num - 1])[temp_shoot_index]);
                                 (*lakes[t_lake_num - 1]).remove(temp_shoot_index);
                             } else {
-                                cout << "Nothing to catch!" << endl;
+                                //cout << "Nothing to catch!" << endl;
                                 shoot1 = 0;
                                 break;
                             }
