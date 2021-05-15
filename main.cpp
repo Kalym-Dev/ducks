@@ -497,19 +497,6 @@ int main() {
     Marble mar("jerry", 22,"dnd", 600);
     Chirki chirki("johs", 1231, "red", 54);
 
-    Lake lake1;
-    mad.setHomeAddress(&lake1);
-    mar.setHomeAddress(&lake1);
-
-    lake1.addElemToEnd(&mad);
-    lake1.addElemToEnd(&mar);
-    lake1.addElemToEnd(&chirki);
-
-    Farm farm1(1, false);
-
-    Hunter hun1(20, 1, &farm1);
-    Hunter hun2(2, 1, &farm1);
-
     int shoot1 = 0;
     int shoot2 = 0;
 
@@ -680,7 +667,7 @@ int main() {
                             if (lakes[t_lake_num - 1]->getLength() > 0) {
                                 temp_shoot_index = rand() % (lakes[t_lake_num - 1]->getLength() - 1);
                                 (*lakes[t_lake_num - 1])[temp_shoot_index]->setCurAddress(hunters[i]->getHunterFarm());
-                                hunters[i]->getHunterFarm()->addElemToEnd(lake1[temp_shoot_index]);
+                                hunters[i]->getHunterFarm()->addElemToEnd((*lakes[t_lake_num - 1])[temp_shoot_index]);
                                 (*lakes[t_lake_num - 1]).remove(temp_shoot_index);
                             } else {
                                 cout << "Nothing to catch!" << endl;
